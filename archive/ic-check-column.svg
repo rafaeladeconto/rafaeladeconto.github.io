@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-check-column</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lista-de-Contatos-[V1.02]" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-check-column" transform="translate(0.000000, -2.000000)">
+            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+            <path d="M10.25,1.97520654 L10.25,13.0448465" id="Line" stroke="#68D068" stroke-width="2.5" stroke-linecap="round" transform="translate(10.250000, 7.479615) rotate(-315.000000) translate(-10.250000, -7.479615) "></path>
+            <path d="M3.97906892,6.1759383 L4.00180822,11.8370971" id="Line-Copy-2" stroke="#68D068" stroke-width="2.5" stroke-linecap="round" transform="translate(3.990439, 9.006518) rotate(-585.000000) translate(-3.990439, -9.006518) "></path>
+        </g>
+    </g>
+</svg>
