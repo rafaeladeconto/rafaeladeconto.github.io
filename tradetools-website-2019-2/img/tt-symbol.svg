@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.24457249,0.0007875 C2.79401487,0.0007875 0.000780669145,2.8200375 0.000780669145,6.3 L0.000780669145,56.7 C0.000780669145,60.18075 2.79557621,63 6.24457249,63 L56.2081784,63 C59.6587361,63 62.4535316,60.179175 62.4535316,56.7 L62.4535316,6.3 C62.4535316,2.81925 59.6571747,0.0007875 56.2081784,0.0007875 L6.24457249,0.0007875 Z" id="path-1"></path>
+        <linearGradient x1="98.7632345%" y1="98.7643596%" x2="2.04117551%" y2="2.04120052%" id="linearGradient-3">
+            <stop stop-color="#7791FF" offset="0%"></stop>
+            <stop stop-color="#70C9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="🖥-Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-[PT]---Fale-Conosco" transform="translate(-698.000000, -3101.000000)">
+            <g id="Group-4" transform="translate(698.000000, 3101.000000)">
+                <g id="Group-50">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-49"></g>
+                    <path d="M6.24457249,0.0007875 C2.79401487,0.0007875 0.000780669145,2.8200375 0.000780669145,6.3 L0.000780669145,56.7 C0.000780669145,60.18075 2.79557621,63 6.24457249,63 L56.2081784,63 C59.6587361,63 62.4535316,60.179175 62.4535316,56.7 L62.4535316,6.3 C62.4535316,2.81925 59.6571747,0.0007875 56.2081784,0.0007875 L6.24457249,0.0007875 Z" id="Fill-48" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-8" transform="translate(21.000000, 15.225000)" fill="#FFFFFF">
+                    <polygon id="Fill-51" points="0 0 0 16.8 4.0872647 16.8 4.0872647 10.4515377 21 10.4515377 21 6.34846232 4.0872647 6.34846232 4.0872647 0"></polygon>
+                    <polygon id="Fill-52" points="16.9122386 15.75 16.9122386 22.0992785 0 22.0992785 0 26.2007215 16.9122386 26.2007215 16.9122386 32.55 21 32.55 21 15.75"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

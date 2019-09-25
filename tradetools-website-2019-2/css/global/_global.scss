@@ -1,0 +1,193 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background-color: $grey-20;
+}
+
+body {
+  font-family: 'din-2014', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: $white;
+  position: relative;
+  z-index: 1;
+}
+
+$margin-default: 10px;
+
+.mb-120 {
+  margin-bottom: $margin-default * 12;
+}
+
+.mb-100 {
+  margin-bottom: $margin-default * 10;
+}
+
+.mb-80 {
+  margin-bottom: $margin-default * 8;
+}
+
+.mb-60 {
+  margin-bottom: $margin-default * 6;
+}
+
+.mb-50 {
+  margin-bottom: $margin-default * 5;
+}
+
+.mb-40 {
+  margin-bottom: $margin-default * 4;
+}
+
+.mb-30 {
+  margin-bottom: $margin-default * 3;
+}
+
+.mb-20 {
+  margin-bottom: $margin-default * 2;
+}
+
+.mb-15 {
+  margin-bottom: $margin-default * 1.5;
+}
+
+.mb-10 {
+  margin-bottom: $margin-default * 1;
+}
+
+.mt-200 {
+  margin-top: $margin-default * 20;
+}
+
+.mt-140 {
+  margin-top: $margin-default * 14;
+}
+
+.mt-100 {
+  margin-top: $margin-default * 10;
+}
+
+.mt-80 {
+  margin-top: $margin-default * 8;
+}
+
+.mt-60 {
+  margin-top: $margin-default * 6;
+}
+
+.mt-50 {
+  margin-top: $margin-default * 5;
+}
+
+.mt-40 {
+  margin-top: $margin-default * 4;
+}
+
+.mt-30 {
+  margin-top: $margin-default * 3;
+}
+
+.mt-20 {
+  margin-top: $margin-default * 2;
+}
+
+.mt-15 {
+  margin-top: $margin-default * 1.5;
+}
+
+.mt-10 {
+  margin-top: $margin-default * 1;
+}
+
+.mt-5 {
+  margin-top: $margin-default * 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .mb-120 {
+    margin-bottom: $margin-default * 7;
+  }
+
+  .mb-100 {
+    margin-bottom: $margin-default * 6;
+  }
+
+  .mb-80 {
+    margin-bottom: $margin-default * 5;
+  }
+
+  .mb-60 {
+    margin-bottom: $margin-default * 3;
+  }
+
+  .mb-50 {
+    margin-bottom: $margin-default * 2.5;
+  }
+
+  .mb-40 {
+    margin-bottom: $margin-default * 2;
+  }
+
+  .mb-30 {
+    margin-bottom: $margin-default * 1.5;
+  }
+
+  .mb-20 {
+    margin-bottom: $margin-default * 1;
+  }
+
+  .mb-15 {
+    margin-bottom: $margin-default * .75;
+  }
+
+  .mb-10 {
+    margin-bottom: $margin-default * 0.5;
+  }
+
+  .mt-200 {
+    margin-top: $margin-default * 10;
+  }
+
+  .mt-140 {
+    margin-top: $margin-default * 8;
+  }
+
+  .mt-100 {
+    margin-top: $margin-default * 7;
+  }
+
+  .mt-80 {
+    margin-top: $margin-default * 5;
+  }
+
+  .mt-60 {
+    margin-top: $margin-default * 3;
+  }
+
+  .mt-50 {
+    margin-top: $margin-default * 2.5;
+  }
+
+  .mt-40 {
+    margin-top: $margin-default * 2;
+  }
+
+  .mt-30 {
+    margin-top: $margin-default * 1.5;
+  }
+
+  .mt-20 {
+    margin-top: $margin-default * 1;
+  }
+
+  .mt-15 {
+    margin-top: $margin-default * .75;
+  }
+}
