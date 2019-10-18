@@ -29,10 +29,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="/">TT Creator</a>
-                    </li>
-                    <li>
-                        <a href="/tradetools-display">TT Display</a>
+                        <a href="#" onclick="window.location='https://www.tradetools.co/tradetools-display'">TT Display</a>
                     </li>
                 </ul>
             </nav>
@@ -78,7 +75,7 @@
                     </svg>
                     English</a>
             </div>
-            <a href="https://www.youtube.com/watch?v=A_9dXqv4YZg" data-youtube-id="A_9dXqv4YZg" class="js-trigger-video-modal">
+            <a href="https://www.youtube.com/watch?v=A_9dXqv4YZg" data-youtube-id="A_9dXqv4YZg" class="js-trigger-video-modal js-video-subtitles">
                 <div class="video"></div>
             </a>
         </div>
@@ -142,8 +139,8 @@
     <section class="process wrap mt-140">
         <h2 class="mb-80">Torne seu processo mais ágil e eficaz</h2>
         <div class="process-container">
-            <div class="browser-window">
-                <div class="browser-navigation">
+            <div class="image">
+                <!-- <div class="browser-navigation">
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
@@ -163,31 +160,35 @@
                 <div class="browser-content screen-4">
                     <img src="img/tt-vantagens-praticidade.jpg"
                         alt="A list showing different types of project you can create with TradeTools.">
-                </div>
+                </div> -->
+                <img src="img/tt-process-1.png" alt="" class="tab-screen-1 -active">
+                <img src="img/tt-process-2.png" alt="" class="tab-screen-2">
+                <img src="img/tt-process-3.png" alt="" class="tab-screen-3">
+                <img src="img/tt-process-4.png" alt="" class="tab-screen-4">
             </div>
             <div class="tabs-container">
-                <div class="tab tab-1 -active">
+                <div class="tab tab-1 -active" id="1">
                     <div class="title-wrapper">
                         <div class="tab-number">1</div>
                         <h5>Materiais customizados</h5>
                     </div>
                     <p class="small">Crie materiais corporativos, de apoio à venda de produtos e para PDV, nos formatos digitais e impressos, mantendo sua identidade visual protegida.</p>
                 </div>
-                <div class="tab tab-2">
+                <div class="tab tab-2" id="2">
                     <div class="title-wrapper">
                         <div class="tab-number">2</div>
                         <h5>Base de dados organizada</h5>
                     </div>
                     <p class="small">O Tradetools se conecta diretamente à sua base de dados via API, para que sua comunicação esteja sempre sincronizada ao portfólio de produtos da empresa. Administre as imagens, códigos, descrições, textos e vídeos, tanto de seus produtos quanto da sua empresa.</p>
                 </div>
-                <div class="tab tab-3">
+                <div class="tab tab-3" id="3">
                     <div class="title-wrapper">
                         <div class="tab-number">3</div>
                         <h5>Crie em instantes</h5>
                     </div>
                     <p class="small">Produza materiais de comunicação recorrentes em minutos, liberando sua equipe para planejar novas tarefas e campanhas. Basta selecionar os produtos desejados, que o TradeTools automatiza a criação por você.</p>
                 </div>
-                <div class="tab tab-4">
+                <div class="tab tab-4" id="4">
                     <div class="title-wrapper">
                         <div class="tab-number">4</div>
                         <h5>Relatórios de desempenho</h5>
@@ -205,7 +206,7 @@
                 <h3 class="mb-20">Aumente a perfomance do seu produto no PDV</h3>
                 <p class="mb-40">Com o TradeTools Display você detecta e acelera a solução de problemas de comunicação,
                     acompanhando toda a jornada de produção do material em seu celular.</p>
-                <a href="" class="button -offset -orange -dark-bg">saiba mais</a>
+                <a href="https://www.tradetools.co/tradetools-display" class="button -offset -orange -dark-bg">Saiba mais</a>
             </div>
             <div class="image">
                 <img src="img/Iphone_01.png" alt="">
@@ -580,16 +581,16 @@
                         </div>
 
                         <div class="col-md-12">
-                            <div class="message mt-30 -success -text-center">
+                            <div class="message mt-30 -success -text-center title">
                                 <div class="check-sent">
                                     <img src="img/icon/check-blue.svg">
                                 </div>
                                 <p class="-grey-40">
-                                    Mensagem enviado com sucesso. Entraremos em contato o mais breve possível.
+                                    Mensagem enviada com sucesso. Entraremos em contato o mais breve possível.
                                 </p>
                             </div>
 
-                            <div class="message mt-30 -error -text-center">
+                            <div class="message mt-30 -error -text-center title">
                                 <span class="dot"></span>
                                 <p class="-grey-40">
                                     Não foi possível enviar a sua mensagem. Por favor tente novamente.
@@ -730,9 +731,26 @@
                     'Content-Type': 'application/json'
                 },
                 data
-            })
+            }).then((result)=>{
+              if(result.inlineMessage == 'Obrigado por enviar o formulário.') {
+                $('.-success').toggleClass('-success -success-ok');
+              } else {
+                $('.-error').toggleClass('-error -error-ok');
+              }
+
+              setTimeout(function(){
+                $('.-success-ok').toggleClass('-success-ok -success');
+                $('.-error-ok').toggleClass('-error-ok -error');
+                }, 3000
+              );
+            });
+
         })
     </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6331646.js"></script>
+    <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

@@ -783,6 +783,10 @@ body {
   color: #5175ec;
 }
 
+.button.-solid.-white.-orange {
+  color: #FF7700;
+}
+
 .-s-mobile {
   display: none;
 }
@@ -890,6 +894,14 @@ header .header-wrapper.-scrolled .button:hover {
   color: #fff;
 }
 
+header .header-wrapper.-scrolled .button.-orange {
+  border: 1px solid #FF7700;
+}
+
+header .header-wrapper.-scrolled .button.-orange:hover {
+  background-color: #FF7700;
+}
+
 header .header-wrapper.-scrolled .english {
   color: #333333;
 }
@@ -957,7 +969,7 @@ header .header-wrapper nav ul li a:visited {
   letter-spacing: .2px;
   line-height: 12px;
   padding: 0 25px;
-  display: none !important;
+  /* display: none !important; */
 }
 
 .english:visited {
@@ -1054,9 +1066,9 @@ header .header-wrapper nav ul li a:visited {
   -webkit-box-shadow: 10px 15px 60px 0 rgba(56, 56, 56, 0.5);
           box-shadow: 10px 15px 60px 0 rgba(56, 56, 56, 0.5);
   border-radius: 10px;
-  background: #f9fafb url(../img/tradetools.jpg) 50% no-repeat;
+  background: #f9fafb url(../img/tt-index-hero.png) 50% no-repeat;
   background-size: cover;
-  background-position: 0;
+  background-position: center;
   cursor: pointer;
 }
 
@@ -1259,18 +1271,42 @@ header .header-wrapper nav ul li a:visited {
           align-items: center;
 }
 
+.process .process-container .image {
+  position: relative;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.process .process-container .image img {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+.process .process-container .image img.-active {
+  opacity: 1;
+}
+
 @media screen and (max-width: 978px) {
   .process .process-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .process .process-container .tabs-container {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .process .process-container .browser-window {
+  .process .process-container .image {
     display: none;
   }
   .process .process-container .tabs-container {
@@ -2152,7 +2188,7 @@ footer .social .social-items {
 
 .video-modal .overlay {
   z-index: 0;
-  background: rgba(13, 1, 61, 0.82);
+  background: rgba(51, 51, 51, 0.8);
   /* overlay color */
   opacity: 0.0;
   -webkit-transition: opacity 0.2s ease-out 0.05s;
@@ -2201,7 +2237,7 @@ footer .social .social-items {
 .close-video-modal {
   display: block;
   position: absolute;
-  left: 0;
+  right: 0;
   top: -40px;
   text-decoration: none;
   font-size: 20px;

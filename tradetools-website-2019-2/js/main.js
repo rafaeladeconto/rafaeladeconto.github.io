@@ -1,21 +1,18 @@
 $(document).ready(function() {
-    $(".process .tabs-container .tab p").hide();
-    $(".process .browser-window .browser-content").hide();
-    $(".process .tabs-container .tab-1 p").show();
-    $(".process .browser-window .browser-content.screen-1").show();
 
-    $(".process .tabs-container .tab").click(function() {
+    $(".process .tabs-container .tab p").hide();
+    $(".process .tabs-container .tab-1 p").show();
+
+    $(".process-container .tabs-container .tab").click(function() {
+        var tabNumber = $(this).attr('id');
         $(this).siblings().removeClass('-active');
         $(this).addClass('-active');
+
         $(this).find("p").slideDown(300);
         $(".process .tabs-container .tab").not(this).find("p").slideUp(300);
 
-        for(i=1; i<5; i++) {
-            if($(this).hasClass('tab-' + i)) {
-                $(".process .browser-window .browser-content").fadeOut(300);
-                $(".process .browser-window .browser-content.screen-" + i).delay(290).fadeIn(300);
-            }
-        } 
+        $(".process-container .image .tab-screen-" + tabNumber).siblings().removeClass('-active');
+        $(".process-container .image .tab-screen-" + tabNumber).addClass('-active');
     });
 
     $(".benefits-menu .benefits-item").click(function() {
@@ -25,6 +22,18 @@ $(document).ready(function() {
         $(this).addClass('-active');
         $(".benefits-content #composition-" + compositionNumber).addClass('-active');
     });
+
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault()
+      
+        $('html, body').animate(
+          {
+            scrollTop: $($(this).attr('href')).offset().top,
+          },
+          700,
+          'swing'
+        )
+      })
 
     	/* Toggle Video Modal
   -----------------------------------------*/
@@ -49,6 +58,10 @@ $(document).ready(function() {
 
           // String the ID and param variables together
           var src = '//www.youtube.com/embed/'+id+autoplay+related_no;
+
+          if ($(".js-trigger-video-modal").hasClass("js-video-subtitles")) {
+            src = src+'&cc_lang_pref=pt-BR&cc_load_policy=1';
+          }
           
           // Pass the YouTube video ID into the iframe template...
           // Set the source on the iframe to match the video ID
@@ -91,3 +104,11 @@ $(document).ready(function() {
 	}
 	toggle_video_modal();
   });
+
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+       $('.header-wrapper').addClass('-scrolled');
+    } else {
+       $('.header-wrapper').removeClass('-scrolled');
+    }
+})
